@@ -1,0 +1,34 @@
+.reportSection{
+    margin: 50px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.reportSection p{
+    font-size: 18px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.reportSection h3{
+    font-size: 24px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.reportSection button{
+    align-items: flex-start;
+    height: 65px;
+    width: 285px;
+    background-color: #436CFF;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.reportSection button:hover{
+    cursor: pointer;
+    background-color:white;
+    color: #436CFF;
+    border: 1px #436CFF solid;
+}

@@ -1,0 +1,32 @@
+@app.route('/captions', methods=['POST'])
+@cross_origin(origin='localhost', headers=['Content- Type', 'Authorization'])
+def get_differences():
+    global success
+    image_list = request.form["image_paths"].split(',')
+    print type(image_list)
+    model_path = '/Users/harshpyati/personal/fyp/text_gen/im2txt/im2txt/run_inference.py'
+    command = [
+        "python",
+        model_path,
+        "--input_files={}".format(image_list)
+    ]
+    try:
+        info = subprocess.check_output(
+            command
+        )
+        success = True
+    except CalledProcessError as e:
+        info = e.output.decode()
+        if info != None:
+            success = True
+    info = info.strip('][').split(', ')
+    captions = []
+    for i in range(0,len(info),2):
+        currentCaption = info[i]
+        nextInfo = info[i+1]
+        captionInfo = {
+            'name':nextInfo.split(':')[1].split('}')[0],
+            'caption': currentCaption.split(':')[1]
+        }
+        captions.append(captionInfo)
+    return jsonify(list(captions))

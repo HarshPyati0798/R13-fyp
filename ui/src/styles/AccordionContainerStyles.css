@@ -1,0 +1,66 @@
+/**
+* ----------------------------------------------
+* Demo styles
+* ----------------------------------------------
+**/
+.accordionTitle{
+    font-size: 24px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+.accordion{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    margin: 20px;
+    border-radius: 16px;
+}
+.accordion__button {
+    background-color: #63B4FF;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    text-align: left;
+    border: none;
+    font-size: 22px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.accordion__button:before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    top: 5px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

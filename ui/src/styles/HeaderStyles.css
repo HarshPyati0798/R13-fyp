@@ -1,0 +1,39 @@
+.HeaderDiv{
+    background-color: #2C80FF;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HeaderDiv p{
+    font-family: 'Satisfy',Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 30px;
+    font-size: 35px;
+    position: relative;
+    top: -12px;
+}
+
+.HeaderDiv p:hover{
+    cursor: pointer;
+}
+.navoptions{
+    display: flex;
+    float: right;
+    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navoptions li{
+    margin-right: 3rem;
+    list-style-type: none;
+    color: white;
+    font-family: 'Sansita', sans-serif;
+    font-size: 24px;
+}
+
+.navoptions li:hover{
+    cursor: pointer;
+}

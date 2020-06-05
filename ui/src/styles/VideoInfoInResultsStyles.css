@@ -1,0 +1,16 @@
+.container{
+    display: inline;
+}
+
+.root{
+    margin: 25px;
+    font-size: 18px;
+}
+
+.allTextContent{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.divclass{
+    float: left;
+}

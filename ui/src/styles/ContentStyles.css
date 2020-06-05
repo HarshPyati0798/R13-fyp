@@ -1,0 +1,61 @@
+.container{
+    margin-top: 100px;
+    align-items: center;
+}
+
+.tryIt{
+
+        margin-top: 100px;
+        align-items: center;
+
+}
+.pclass{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: #2c80ff;
+    font-size: 35px;
+    text-align: center; 
+}
+
+.uploadvideocontainer{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.process{
+    width: 200px;
+    height: 60px;
+    background-color: #436cff;
+    border-radius: 50px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: none;
+    box-shadow: 4px rgba(0, 0, 0, 0.25);
+}
+
+.process:hover{
+    cursor: pointer;
+}
+
+.uploadvideocontainer:hover{
+    cursor: pointer;
+}
+
+.colorPrimary {
+    
+    background-color: rgba(44, 128, 255, 0.56);
+    
+}
+
+.progressContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    top: -150px;
+    left: -15px;
+}
